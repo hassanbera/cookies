@@ -6,12 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    <label for="firstText">first name:</label>
-    <input id="firstText"><br>
-    <label for="lastText">last name:</label>
-    <input id="lastText"><br>
-    <button id="submitBtn">submit</button>
-     <button id="cookieBtn">get cookiest</button>
+    <div class="container">
+        <h1>Cookie Demo</h1>
+        <div class="form-group">
+            <label for="firstText">First Name:</label>
+            <input id="firstText" type="text">
+        </div>
+        <div class="form-group">
+            <label for="lastText">Last Name:</label>
+            <input id="lastText" type="text">
+        </div>
+        <div class="button-group">
+            <button id="submitBtn" class="btn">Set Cookie</button>
+            <button id="cookieBtn" class="btn">Get Cookie</button>
+            <button id="deleteBtn" class="btn">Delete Cookie</button>
+        </div>
+        <div id="cookieStatus"></div>
+        <div id="threejs-container">
+            <canvas id="cookieCanvas"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
